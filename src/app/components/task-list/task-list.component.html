@@ -1,7 +1,7 @@
 <div>
   <ul>
     <li *ngFor="let task of tasks">
-      <a href="">
+      <a routerLink="/task/{{task.title}}/{{task.description}}">
         {{task.title}}
       </a>
     </li>
