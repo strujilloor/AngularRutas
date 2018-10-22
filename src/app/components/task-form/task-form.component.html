@@ -1,3 +1,13 @@
-<p>
-  task-form works!
-</p>
+<div>
+  <form (submit)="addTask(newTitle, newDescription)">
+    <div>
+      <input type="text" placeholder="Task Title" #newTitle>
+    </div>
+    <div>
+      <textarea name="" id="" cols="30" rows="10" placeholder="Task Description" #newDescription></textarea>
+    </div>
+    <button type="submit" class="btn-block">
+      Send
+    </button>
+  </form>
+</div>
