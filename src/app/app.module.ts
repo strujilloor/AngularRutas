@@ -14,10 +14,7 @@ const appRoutes: Routes = [
     { path: 'task-form', component: TaskFormComponent },
     { path: 'task-list', component: TaskListComponent },
     { path: 'task/:title/:description', component: TaskComponent },
-    { path: '',
-        redirectTo: '/task-form',
-        pathMatch: 'full'
-    }
+    { path: '', redirectTo: '/task-form', pathMatch: 'full'}
 ];
 
 

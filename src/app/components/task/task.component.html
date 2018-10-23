@@ -1,5 +1,10 @@
-<div>
-  <h1>{{task.title}}</h1>
-  <p>{{task.description}}</p>
-  <button (click)="back()">Back</button>
+<div class="card">
+  <div class="card-header">
+    <b>Task</b>
+  </div>
+  <div class="card-body">
+    <h1 class="card-title">{{task.title}}</h1>
+    <p class="card-text">{{task.description}}</p>
+    <button (click)="back()" class="btn btn-primary">Go Back</button>
+  </div>
 </div>

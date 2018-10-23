@@ -1,13 +1,18 @@
-<div>
-  <form (submit)="addTask(newTitle, newDescription)">
-    <div>
-      <input type="text" placeholder="Task Title" #newTitle>
-    </div>
-    <div>
-      <textarea name="" id="" cols="30" rows="10" placeholder="Task Description" #newDescription></textarea>
-    </div>
-    <button type="submit" class="btn-block">
-      Send
-    </button>
-  </form>
+<div class="card">
+  <div class="card-header">
+    <h3><b>Create Task</b></h3>
+  </div>
+  <div class="card-body">
+    <form (submit)="addTask(newTitle, newDescription)">
+      <div class="form-group">
+        <input type="text" placeholder="Task Title" #newTitle class="form-control">
+      </div>
+      <div class="form-group">
+        <textarea class="form-control" id="" cols="30" rows="10" placeholder="Task Description" #newDescription></textarea>
+      </div>
+      <button type="submit" class="btn btn-dark btn-block">
+        Send
+      </button>
+    </form>
+  </div>
 </div>
